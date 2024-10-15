@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Elements</title>
+        <style>
+
+            ul {
+                font-size: 40px;
+                list-style-type: square;
+            }
+            /*Pseudo classes*/
+            ul li:first-child {
+                color: red;
+            }
+            ul li:last-child {
+                color: blue;
+            }
+            ul li:nth-child(3) {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+        </ul>
+    </body>
+</html>

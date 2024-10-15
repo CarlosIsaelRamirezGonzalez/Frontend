@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transitions</title>
+        <style>
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: orangered;
+                transition-property: width;
+                transition-duration: 1s;
+                /*transition-delay: 0.1s;*/
+                /* transition-timing-function: cubic-bezier(0,1,.99,.28); ease, ease-in, ease-out, linear*/
+                /*Shorter*/
+                transition: width 1s 1s cubic-bezier(0,1,.99,.28), background-color 5s; /*diretion duration delay transition-function color-change duration-color-change*/
+                transition: all 1s; /*The same but con ease-in*/
+            }
+
+            .box:hover {
+                width: 400px;
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+
+        </div>
+    </body>
+</html>

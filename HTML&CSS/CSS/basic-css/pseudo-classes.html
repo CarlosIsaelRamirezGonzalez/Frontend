@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Classes</title>
+        <style>
+            .dropdown-content a {
+                display: none;
+                
+            }
+            /*Pseudo clases*/
+
+            .dropdown:hover .dropdown-content a{
+                display: block;
+            }
+
+            a:link {
+                font-size: 30px;
+                text-decoration: none;
+                color: green;
+            }
+
+            a:visited {
+                font-size: 20px;
+                text-decoration: none;
+                color: goldenrod;
+            }
+
+            a:hover {
+                color: gray;
+            }
+            /*When the user hold the click*/
+            a:active {
+                color: skyblue
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="https://www.google.com">Click Here.</a>
+        
+        <div class="dropdown">
+            <a href="#">Items</a>
+            <div class="dropdown-content">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+                <a href="#">Item 4</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            h1 {
+                /*border-width: 5px;
+                border-style: solid;
+                border-color: red;*/
+
+                /*Its equals to*/
+                
+                border: 5px red solid;
+                
+                /*padding-top: 30px;
+                padding-right: 50px;
+                padding-left: 70px;
+                padding-bottom: 90px;*/
+
+                /*Its equals to*/
+
+                padding: 30px 50px 70px 90px;
+                /*padding: 50px 100px -> bottom and top with 50px, and left and right with 100px
+                 padding: 100px -> all the sides have 100px*/
+
+
+                /*margin-top: 50px;
+                margin-right: 100px;
+                margin-bottom: 150px;
+                margin-left: 200px;*/
+
+                /*Its equals to*/
+                margin: 50px 100px 150px 200px;
+
+                /*Box sizing*/
+                height: 300px;
+                width: 300px;
+                box-sizing: border-box;
+                /*content-box (predeterminado): En este modelo, el tamaño total de un
+                elemento se calcula excluyendo el relleno y el borde. Esto significa
+                que el ancho y alto que especifiques se aplicarán solo al contenido del
+                elemento, sin incluir el relleno y el borde.
+
+                border-box: En este modelo, el tamaño total de un elemento se calcula
+                incluyendo el relleno y el borde. Esto significa que el ancho y alto
+                que especifiques se aplicarán al contenido del elemento, incluyendo 
+                el relleno y el borde. El contenido del elemento se ajustará automáticamente
+                para acomodar el relleno y el borde, manteniendo el tamaño total especificado.*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Box Model</h1>
+        Inline element
+    </body>
+</html>

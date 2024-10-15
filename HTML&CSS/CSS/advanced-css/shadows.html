@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shadows</title>
+        <style>
+            .heading {
+                font-family: "Trebuchet MS", sans-serif;
+                font-size: 55px;
+                text-align: center;
+                color: #555;
+                text-shadow: 3px 3px 10px #888;/*Horizontal Vertical Blurry*/
+            }
+            
+            .card {
+                width: 400px;
+                margin: 100px auto;
+                background-color: #ccc;
+                padding: 5px;
+                text-align: center;
+                box-shadow: 5px 5px 10px #777;
+            }
+
+            .card:hover {
+                box-shadow: 10px 10px 20px #aaa;
+            }
+
+            .card img {
+                width: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">Heading with shadow</h1>
+
+        <div class="card">
+            <img src="https://4kwallpapers.com/images/wallpapers/batman-dc-superheroes-colorful-dark-background-minimal-art-3840x2160-6118.jpg">
+            <h2>My class</h2>
+        </div>
+    </body>
+</html>

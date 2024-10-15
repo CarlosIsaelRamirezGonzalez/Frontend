@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Box</title>
+        <style>
+            .container {
+
+                height: 700px;
+                margin-top: 50px;
+                padding: 20px 0;
+                background-color: #f19861;
+                display: flex; /*inline-flex*/
+                
+                flex-direction: row; /*row-reverse, column, column-reverse*/ 
+                flex-wrap: wrap; /*When the images don't have more space they dont go out from the container*/
+                /*Shorter way*/
+                flex-flow: row wrap;
+                justify-content: space-evenly; /*flex-start(default), flex-end, space-between, space-around, space-evenly*/
+                align-items: center; /*baseline(stay the format of the letters), stretch(top to bottom), flex-start(stay in the top of the container), center(in the center of container), flex-end(stay in the bottom)*/
+                /*align-content: space-evenly;*/
+            }
+
+            .item {
+                width: 70px;
+                padding: 30px;
+                margin: 10px;
+                background-color: #06af8f;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+            }
+
+            .item-1 {
+                width: 200px;
+                /*items with lower value go first*/
+                order: 1;
+                /*flex-grow: 1;*/
+            }
+
+            .item-5 {
+                width: 200px;
+                order: -1;
+                /*align-self: stretch;/* /*It's the same of align-items but with one item*/
+                /*flex-grow: 1;/*Grow with the page*/
+                /*flex-shrink: 0; /*For this work we have to change the value to nowrap and delete flex-grow*/
+                /*The value of flex-shrink make that the item grow or not grow like x allow*/
+                flex-basis: 100px; /*Set the initial size of an element, the varpx depends on if the flex-direction is a row or a column*/
+                flex: 0 1 auto; /*flex-grow flex-shrink flex-basis*/
+            }   
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item item-1">A</div>
+            <div class="item item-2">B</div>
+            <div class="item item-3">C</div>
+            <div class="item item-4">D</div>
+            <div class="item item-5">E</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+Change the word 'developer' to 'Developer'

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Formating</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+            div {
+                text-align: right;
+                border: 2px solid red;
+            }
+            p {
+                display: inline; /*Only the letter apply the properties (text-align properties are disabled when display is inline, but we can wraped in a div)*/
+                background-color: rgb(42, 176, 42);
+                color: white;
+                font-size: 25px;
+                text-align: justify; /*justify, left, right, center*/
+            }   
+            h1 {
+                font-family: Verdana, Helvetica, sans-serif;
+                font-style: italic;
+            }
+            h2 {
+                font-family: "Comic Sans Ms", cursive;
+                font-weight: bold;
+            }
+            h3 {
+                font-family: "Kode Mono", monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <h1>This is Heading element.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloribus
+        possimus earum tempora saepe praesentium blanditiis, ducimus eum id neque
+        corrupti sapiente nulla sed alias.</h2>
+
+        <h3>Google font theme</h3>
+    </body>
+</html>

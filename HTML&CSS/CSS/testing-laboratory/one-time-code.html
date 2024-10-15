@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :where([autocomplete=one-time-code]) {
+            --otp-digits: 6; /* Digitos esperados*/
+            --otp-ls: 2ch; /* Tamaño de letra  */
+            --otp-gap: 1.25; /* Espacio entre digitos */
+          
+            /* private consts */
+            --_otp-bgsz: calc(var(--otp-ls) + 1ch); /* Calcula el tamaño del fondo para un digito */
+            --_otp-digit: 0; /* Representa el digito actual en el campo de entrada (opcional) */
+          
+            /* Restablece todos los estilos a sus valores predeterminados */
+            all: unset;
+
+            /* Define un fondo para el campo de entrada del código OTP utilizando gradientes lineales */
+            background: 
+                linear-gradient(90deg, var(--otp-bg, #BBB) calc(var(--otp-gap) * var(--otp-ls)), transparent 0),
+                linear-gradient(90deg, var(--otp-bg, #EEE) calc(var(--otp-gap) * var(--otp-ls)), transparent 0);
+                
+            background-position: calc(var(--_otp-digit) * var(--_otp-bgsz)) 0, 0 0; /* Posicionamiento del fondo */
+
+            background-repeat: no-repeat, repeat-x; /* Repeticion del fondo */
+
+            background-size: var(--_otp-bgsz) 100%; /* Tamaño del fondo */
+
+            caret-color: var(--otp-cc, #222); /* Color del cursor del campo de entrada */
+
+            caret-shape: block; /* Forma del cursor del campo de entrada */
+
+            clip-path: inset(0% calc(var(--otp-ls) / 2) 0% 0%); /* Define una forma de recorte para el campo de entrada */
+
+            font-family: ui-monospace, monospace; /* La fuente para el campo de entrada */
+
+            font-size: var(--otp-fz, 2.5em); /* Tamaño de letra */
+
+            inline-size: calc(var(--otp-digits) * var(--_otp-bgsz)); /* Tamaño del campo de entrada en linea */
+
+            letter-spacing: var(--otp-ls); /* Espaciado entre letras */
+
+            padding-block: var(--otp-pb, 1ch); /* Relleno vertical para el campo de entrada */
+
+            padding-inline-start: calc(((var(--otp-ls) - 1ch) / 2) * var(--otp-gap)); /* Establece el relleno horizontal del campo de entrada */
+
+          }
+          
+          /* For this demo */
+          label span {
+            display: block;
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            font-weight: 500;
+            margin-block-end: 1ch;
+          }
+
+    </style>    
+</head>
+<body>
+    <label>
+        <span>One Time Code</span>
+        <input type="text" autocomplete="one-time-code" inputmode="numeric" maxlength="6" pattern="\d{6}">
+    </label>
+</body>
+<script>
+    const input = document.querySelector('[autocomplete=one-time-code'); /* Busca el primer elemento de entrada que tenga el atributo 'autocomplete' establecido en 'one-time-code' */
+    input.addEventListener('input', () => input.style.setProperty('--_otp-digit', input.selectionStart)); /* Agrega un event listener que se activa cada vez que el usuario ingresa texto en el campo de entrada. Cuando se activa, actualiza la variable CSS '--_otp-digit' con la posición del cursor dentro del campo de entrada. Esto ayuda a resaltar el dígito actual en el campo de entrada. */    
+</script>
+</html>

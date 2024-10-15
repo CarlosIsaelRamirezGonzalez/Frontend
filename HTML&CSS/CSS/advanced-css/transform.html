@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transform</title>
+        <style>
+            .box {
+                width: 200px;
+                height: 200px;
+                margin: 320px auto;
+                background-color: orangered;
+                text-align: center;
+                font-size: 60px;
+                color: #fff;
+                padding-top: 55px;
+                box-sizing: border-box;
+                transition: transform 1s;
+            }
+            .box:hover {
+                /*transform: translateX(200px);
+                transform: translateY(200px);*/
+
+                transform: translate(200px 200px); /*X Y, (Can accept one parameter)*/
+                transform: rotate(90deg);
+                transform: scale(.5, .5);/*width height (You can let one parameter, but the efect will be weird)*/
+                transform: skew(180deg, 180deg); /*X Y, and you can let one paramete too*/
+                transform: rotateX(360deg);
+                transform: rotateY(360deg);
+                transform: rotateZ(360deg);
+                transform: translate(200px, 200px) scale(1.5, 1.5) rotate(90deg);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            Box
+        </div>
+
+    </body>
+</html>

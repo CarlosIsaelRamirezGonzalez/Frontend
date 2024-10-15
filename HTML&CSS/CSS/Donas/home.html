@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="img/donut-logo.jpg">
+    <script src="https://kit.fontawesome.com/e8af35a10c.js" crossorigin="anonym ous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ruedan las donas, dulce tentación, en nuestra tienda, amor en acción.</title>
+
+
+</head>
+<body>
+    
+    <!-- navbar -->
+    <div class="navbar">
+        
+        <input type="checkbox" class="navbar-checkbox-sidebar" hidden id="click">
+
+        <!-- sidebar -->
+        <div class="sidebar">
+
+            <label for="click">
+                <img src="./img/donut-menu.png" alt="" class="menu-icon">
+            </label>
+
+            <ul class="sidebar-icons-list">
+                <li>
+                    <a href="#" class="sidebar-social-link"><i class="fa-brands fa-square-youtube sidebar-icon-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-social-link"><i class="fa-brands fa-square-twitter sidebar-icon-twitter"></i></a>
+                </li>
+                <li>    
+                    <a href="#" class="sidebar-social-link"><i class="fa-brands fa-square-facebook sidebar-icon-facebook"></i></a>
+                </li>
+            </ul>
+
+            <div class="sidebar-year">
+                <p>2024</p>
+            </div>
+        </div>
+        <!-- end of sidebar -->
+
+        <!-- navigation -->
+        <nav class="navigation">
+            <h1 class="navigation-heading">La Dona Glaseada</h1>    
+            
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">Home</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">Orders</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">Settings</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">Help</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">Log Out</a>
+                </li>
+            </ul>
+
+            
+            <div class="copyright">
+                <p>&copy; 2024. La Dona Glaseada. All Rights Reserved</p>
+            </div>
+        </nav>
+        <!-- end of navigation -->
+    </div>
+    <!-- end of navbar -->
+
+
+    <section class="donuts">
+        <h2 class="donuts-header">Donuts in stock</h2>
+
+        <div class="donuts-popup" id="popup">
+            <i class="fa-solid fa-xmark donuts-popup-icon" id="close-donuts-popup"></i>
+            <h2 class="donuts-popup-question">How many donuts do you want?</h2>
+            <input type="number" class="donuts-popup-number" placeholder="Number">
+            <button class="donuts-popup-confirm">Done</button>
+        </div>
+
+        <div class="donuts-container">
+
+            <div class="donut-card">
+                <div class="front-face">
+                    <div class="front-face-image">
+                        <img src="./img/dona-cajeta.png" alt="dona-cajeta.png">
+                    </div>
+                    <div class="front-face-name">
+                        <h3>Cashew donut</h3>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="back-face-description">
+                        <p>Delicious donut filled with cajeta covered with white sugar</p>
+                        <p>Price: $10</p>
+                    </div>
+                    <div class="back-face-buttons">
+                        <button class="buy-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donut-card">
+                <div class="front-face">
+                    <div class="front-face-image">
+                        <img src="./img/dona-brownie.png">
+                    </div>
+                    <div class="front-face-name">
+                        <h3>Brownie donut</h3>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="back-face-description">
+                        <p>Delicious donut inspired by the famous brownie cake, chocolate flavor with chocolate chips will give an incredible flavor to your palate</p>
+                        <p>Price: $15</p>
+                    </div>
+                    <div class="back-face-buttons">
+                        <button class="buy-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donut-card">
+                <div class="front-face">
+                    <div class="front-face-image">
+                        <img src="./img/dona-maple.png">
+                    </div>
+                    <div class="front-face-name">
+                        <h3>Maple donut</h3>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="back-face-description">
+                        <p>Delicious donut covered in maple syrup</p>
+                        <p>Price: $8</p>
+                    </div>
+                    <div class="back-face-buttons">
+                        <button class="buy-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donut-card">
+                <div class="front-face">
+                    <div class="front-face-image">
+                        <img src="./img/dona-glaseada.png">
+                    </div>
+                    <div class="front-face-name">
+                        <h3>Classic donut</h3>
+                    </div>
+                </div>
+                <div class="back-face">
+                    <div class="back-face-description">
+                        <p>The house specialty, glazed donut</p>
+                        <p>Price: $9</p>
+                    </div>
+                    <div class="back-face-buttons">
+                        <button class="buy-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="shopping-cart">
+            <i class="fa-solid fa-cart-plus shoppin-cart-icon"></i>
+            <div class="shoppin-cart-number-items">
+                <h3 class="shopping-cart-number">4</h3>
+            </div>
+        </div>  
+
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cameraCards = document.querySelectorAll('.donut-card');
+        
+            cameraCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });        
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const popup = document.querySelector('.donuts-popup'); 
+            const buyBtn = document.querySelectorAll('.buy-btn');
+            const confirmBtn = document.querySelector('.donuts-popup-confirm');
+            const closeBtn = document.getElementById('close-donuts-popup');
+
+            closeBtn.addEventListener('click', function() {
+                closeBtn.classList.remove('active');
+            });
+
+            buyBtn.forEach(buy => {
+                buy.addEventListener('click', function() {
+                    popup.classList.add('active');
+                });
+            });
+            
+            confirmBtn.addEventListener('click', function() {
+                popup.classList.remove('active');
+            });
+
+        });
+
+    </script>
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>

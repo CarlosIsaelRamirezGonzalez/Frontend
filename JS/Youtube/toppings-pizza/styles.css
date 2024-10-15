@@ -1,0 +1,79 @@
+/* common styles */
+html {
+    font-size: 62.5%; /*16px is the default with this is 10px, this because is easier do calculations with the rem unit*/
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background: linear-gradient(to top, rgb(122, 117, 57, .6), rgb(122, 117, 57, .7)), url('../toppings-pizza/images/pizza.jpg') center/cover no-repeat;
+
+}   
+/* end of common styles */
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    min-height: 80vh;
+    width: 80vw;
+    max-width: 60rem;
+    background-color: white;
+    border: .4rem solid black ;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 2rem 1rem;
+}
+
+.icono-pizza {
+    position: relative;    
+    left: 40%;
+}
+
+#lista-toppings {
+    padding: 0;
+    width: 90%;
+}
+
+.topping {
+    font-size: 2rem;
+    font-weight: bold;
+    
+    color: white;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 80px;
+    margin: 15px 0;
+
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.fondo-marron {
+    background-color: #aa5822;
+}
+  
+.fondo-naranja {
+    background-color: #ff7b0f;
+}
+
+.green-text {
+    color: rgb(11, 215, 11);
+}

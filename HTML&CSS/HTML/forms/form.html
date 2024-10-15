@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Formulario-HTML</title>
+    </head>
+    <body>
+        <form action="http://www.destiny.com/login.php"> 
+            <label>Username: <input type="text" name="username" size="15" maxlength="30" required="required"/></label>
+            <br><br>
+            <label>Password: <input type="password" name="password" size="15" maxlength="30" required="required"/></label>
+
+            <p>What do you think about this page?</p>
+            <textarea>Here your comments please...</textarea>
+            <br><br>
+
+            Next, you must select what kind of icecream do you prefer.
+            <br>
+            <input id="chocolate" type="radio" name="icecream" value="chocolate" checked="checked"/> 
+            <label for="chocolate" >Chocolate</label>
+            <input id="strawberries" type="radio" name="icecream" value="strawberries" /> 
+            <label for="strawberries" >Strawberries</label>
+            <input id="vanilla" type="radio" name="icecream" value="vanilla" /> 
+            <label for="vanilla" >Vanilla</label>
+            <input id="other-radio" type="radio" name="icecream" value="other"/> 
+            <label for="other-radio" >Other</label>
+            <br><br>
+            Now, please select your favorite music service:
+            <br />
+            <input id="ytmusic" type="checkbox" name="service" value="ytmusic"> 
+            <label for="ytmusic">YTMusic</label>
+            <input id="spotify" type="checkbox" name="service" value="spotify"> 
+            <label for="spotify">Spotify</label>
+            <input id="itunes" type="checkbox" name="service" value="itunes"> 
+            <label for="itunes">iTunes</label>
+            <input id="other-checkbox" type="checkbox" name="service" value="other"/> 
+            <label for="other-checkbox">Other</label>
+
+            <p>On what device do you listen music on?
+                <select name="devices">
+                    <option value="phone">Phone</option>
+                    <option value="alexa">Alexa</option>
+                    <option value="googleHome">Google Home</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <p>What instruments do you play? (You can select more than one option by holding down control on PC)</p>
+            <select name="instruments" size="3" multiple="multiple"> <!-- If we delete the multiple atribute, then the user just can select one option -->
+                <option value="guitar" selected="selected">Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="ukelele">Ukelele</option>
+                <option value="piano">Piano</option>
+            </select>
+
+            <p>Upload your song in MP3 format: <br />
+                <input type="file" name="user-song"/> 
+                <input type="submit" value="Upload"/>
+            </p>
+
+            <p>Great, now subcribe to our email list:</p>
+            <input type="email" name="email"/>
+            <input type="submit" name="subcribe" value="Subscribe"/>
+            <button>
+                <input type="image" src="blue-boton.png" width="50"
+                height="50"/> Add
+            </button>
+            
+            <fieldset>
+                <legend>Contact details</legend>
+                <label>Telephone:<br/><input type="text" name="telephone"></label><br/>
+                <label>Address:<br/><input type="text" name="address"></label><br/>
+                <label>CURP:<br/><input type="text" name="curp"></label>
+            </fieldset>
+
+            <label>Birth day:<input type="date" name="birth"/></label>
+            <br><br/>
+            <label>Search:<input type="search" name="search" placeholder="Enter a keyword" /></label>
+        </form> 
+    </body>
+</html>
